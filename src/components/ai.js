@@ -1,5 +1,6 @@
 import { getAvailableMoves } from "./game";
 
+// Перемещается рандомно
 export class AIPlayer {
   constructor() {
     this.color = 1;
@@ -16,3 +17,5 @@ export class AIPlayer {
     }, 2000);
   }
 }
+
+export class SmartAIPlayer {}

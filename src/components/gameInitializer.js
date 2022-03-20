@@ -1,6 +1,6 @@
 import Game from "./game";
 import React from "react";
-import { AIPlayer } from "./ai";
+import { AIPlayer, SmartAIPlayer } from "./ai";
 import "./Board/board.css";
 export default class GameInitializer extends React.Component {
   constructor() {
@@ -47,7 +47,7 @@ export default class GameInitializer extends React.Component {
     } else {
       return (
         <div>
-          <Game ai={new AIPlayer()}></Game>
+          <Game ai={new SmartAIPlayer()}></Game>
           <button
             className="difficulty-button"
             onClick={() => this.clickEasyMode()}
